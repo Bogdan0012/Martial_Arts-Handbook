@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".InfoArtActivity"
+android:background="@drawable/exam_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="53dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="675dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artTitle"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text=""
+            android:textSize="30sp"
+            android:textStyle="normal|bold|italic" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="495dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artCountry"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text=""
+            android:textSize="48sp"
+            android:textColor="#ff0000"
+            android:textStyle="normal|bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="420dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="21sp"
+            android:scrollbars = "vertical"
+            android:textStyle="normal|italic" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="276dp"
+        android:layout_height="262dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="430dp">
+
+        <ImageView
+            android:id="@+id/imageViewArt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+<!--        android:background="#000"-->
+
+        <Button
+            android:id="@+id/prBtn"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="206dp"
+            android:layout_weight="1"
+            android:text="{"
+            android:backgroundTint="#00000000" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:text="}"
+            android:backgroundTint="#00000000" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
